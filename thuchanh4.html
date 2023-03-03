@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a =parseInt( prompt(' số'));
+  let numbers = [2,5,7,6,8,9,10];
+  let i ;
+  let check = false;
+  for( i = 0; i < numbers.length;i++ ){
+      if(a == numbers[i]){
+          check = true;
+          break;
+      }
+  }
+  if(check)
+      document.write('a'+numbers[i]+'<br>'+'index'+i);
+  else
+       a = parseInt(prompt('so'));
+
+
+</script>
+</body>
+</html>
