@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3a</title>
+</head>
+<body>
+<script>
+    var str = 'The Quick Brown Fox';
+    const a = 'QWERTYUIOPASDFGHJKLZXCVBNM';
+    const b = 'qwertyuiopasdfghjklzxcvbnm' ;
+    const result = [];
+    for(let i =0 ; i< str.length ; i++){
+       // kiểm tra xem phần tử nào chu hoa trong str giống với a
+        if(a.includes(str[i])){
+            // thì chuyển chữ hoa thành thường rồi push vào result
+            result.push(str[i].toLowerCase());
+        }
+        // kiểm tra xem phần tử nào chữ tờng trong str gống với b
+        else if(b.includes(str[i])){
+            // thì chuyển chữ thường thành hoa rồi push vào result
+            result.push(str[i].toUpperCase());
+        }
+        else
+            result.push(str[i]);
+    }
+    document.write(result.join(''));
+
+</script>
+
+</body>
+</html>
